@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rwina</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        .top-bar {
+            background-color: black;
+            color: white;
+            padding: 20px 50px;
+            font-size: 2.5em;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hamburger {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 30px;
+            height: 25px;
+            cursor: pointer;
+        }
+
+            .hamburger div {
+                width: 30px;
+                height: 4px;
+                background-color: white;
+                border-radius: 2px;
+            }
+
+        .typing-container {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            display: inline-block;
+            font-family: 'Courier New', Courier;
+            white-space: nowrap;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 6ch;
+            }
+        }
+
+        .typing {
+            display: inline-block;
+            width: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 1s steps(6) 1s forwards;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            background-color: black;
+            width: 200px;
+            z-index: 100;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateX(-10px);
+            transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+        }
+
+            .dropdown-menu a {
+                color: white;
+                text-decoration: none;
+                display: block;
+                padding: 12px 20px;
+                font-size: 1em;
+                transition: background-color 0.3s ease, color 0.3s ease;
+                border-bottom: 1px solid #444;
+            }
+
+                .dropdown-menu a:hover {
+                    background-color: #444;
+                    color: #f0f0f0;
+                }
+
+                .dropdown-menu a:last-child {
+                    border-bottom: none;
+                }
+
+        .dropdown-active {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0);
+        }
+
+        .typing-link {
+            color: white;
+            text-decoration: none;
+        }
+
+            .typing-link:visited {
+                color: white;
+            }
+
+            .typing-link:hover {
+                color: white;
+            }
+
+            .typing-link:active {
+                color: white;
+            }
+
+        .who-are-we {
+            position: fixed;
+            top: 65px;
+            left: 0;
+            width: 33.33%;
+            height: 100%;
+            background-color: #666;
+            color: white;
+            padding: 20px;
+            box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
+            z-index: 3;
+        }
+
+            .who-are-we h2,
+            .who-are-we p {
+                color: white;
+            }
+
+            .who-are-we h2 {
+                margin-bottom: 10px;
+                font-size: 1.8em;
+            }
+
+            .who-are-we p {
+                font-size: 1.1em;
+                line-height: 1.5;
+            }
+
+        .section2 {
+            position: fixed;
+            top: 65px;
+            left: 33.33%;
+            width: 33.33%;
+            height: 100%;
+            background-color: #555;
+            color: white;
+            padding: 20px;
+            box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
+            z-index: 2;
+        }
+
+        .section3 {
+            position: fixed;
+            top: 65px;
+            left: 66.66%;
+            width: 33.33%;
+            height: 100%;
+            background-color: #444;
+            color: white;
+            padding: 20px;
+            box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="typing-container">
+            <a href="Mainpage.html" class="typing-link">
+                <span id="rwina-text" class="typing"></span><span class="cursor"></span>
+            </a>
+        </div>
+
+        <div id="dropdownMenu" class="dropdown-menu">
+            <a href="Mainpage.html">Home</a>
+            <a href="Productpage.html">Products</a>
+            <a href="#">About</a>
+        </div>
+    </div>
+
+    <div class="who-are-we">
+        <h2>Who are we?</h2>
+        <p>We are.....</p>
+    </div>
+
+    <div class="section2">
+        <h2>Section 2</h2>
+        <p></p>
+    </div>
+
+    <div class="section3">
+        <h2>Section 3</h2>
+        <p></p>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("dropdownMenu");
+            menu.classList.toggle("dropdown-active");
+        }
+
+        var i = 0;
+        var txt = 'Rwina';
+        var speed = 150;
+
+        var typingElement = document.getElementById("rwina-text");
+        typingElement.innerHTML = '';
+
+        var cursor = document.createElement("span");
+        cursor.innerHTML = '|';
+        cursor.style.animation = "blink 0.7s infinite";
+        cursor.style.display = "inline";
+
+        function typeWriter() {
+            if (i < txt.length) {
+                typingElement.innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            } else {
+                typingElement.appendChild(cursor);
+            }
+        }
+
+        typeWriter();
+    </script>
+</body>
+</html>

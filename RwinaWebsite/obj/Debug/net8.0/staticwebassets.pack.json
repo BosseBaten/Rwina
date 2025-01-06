@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\BBaten\\source\\repos\\RwinaWebsite\\RwinaWebsite\\wwwroot\\Mainpage.html",
+      "PackagePath": "staticwebassets\\Mainpage.html"
+    },
+    {
+      "Id": "C:\\Users\\BBaten\\source\\repos\\RwinaWebsite\\RwinaWebsite\\wwwroot\\Productpage.html",
+      "PackagePath": "staticwebassets\\Productpage.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.RwinaWebsite.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.RwinaWebsite.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.RwinaWebsite.props",
+      "PackagePath": "build\\RwinaWebsite.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.RwinaWebsite.props",
+      "PackagePath": "buildMultiTargeting\\RwinaWebsite.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.RwinaWebsite.props",
+      "PackagePath": "buildTransitive\\RwinaWebsite.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,228 @@
+{
+  "Version": 1,
+  "Hash": "NdjSPELeXDnf7NYySH9jZZMpT6OmX4B0IIjfJuPCAAU=",
+  "Source": "RwinaWebsite",
+  "BasePath": "_content/RwinaWebsite",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "RwinaWebsite\\wwwroot",
+      "Source": "RwinaWebsite",
+      "ContentRoot": "C:\\Users\\BBaten\\source\\repos\\RwinaWebsite\\RwinaWebsite\\wwwroot\\",
+      "BasePath": "_content/RwinaWebsite",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\BBaten\\source\\repos\\RwinaWebsite\\RwinaWebsite\\wwwroot\\Mainpage.html",
+      "SourceId": "RwinaWebsite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\BBaten\\source\\repos\\RwinaWebsite\\RwinaWebsite\\wwwroot\\",
+      "BasePath": "_content/RwinaWebsite",
+      "RelativePath": "Mainpage#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "11g28tj8bd",
+      "Integrity": "W3ZtRY1RttCxdEZI18JzPtIyiRjNwPYstDk+kHNm5ho=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Mainpage.html"
+    },
+    {
+      "Identity": "C:\\Users\\BBaten\\source\\repos\\RwinaWebsite\\RwinaWebsite\\wwwroot\\Productpage.html",
+      "SourceId": "RwinaWebsite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\BBaten\\source\\repos\\RwinaWebsite\\RwinaWebsite\\wwwroot\\",
+      "BasePath": "_content/RwinaWebsite",
+      "RelativePath": "Productpage#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "syqn2trnjp",
+      "Integrity": "RC4+vj9S5skEIrFPfLH+yykc5N4T5OTCbQoTWDrnkvU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Productpage.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "Mainpage.11g28tj8bd.html",
+      "AssetFile": "C:\\Users\\BBaten\\source\\repos\\RwinaWebsite\\RwinaWebsite\\wwwroot\\Mainpage.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6532"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"W3ZtRY1RttCxdEZI18JzPtIyiRjNwPYstDk+kHNm5ho=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 06 Jan 2025 13:41:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "11g28tj8bd"
+        },
+        {
+          "Name": "label",
+          "Value": "Mainpage.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-W3ZtRY1RttCxdEZI18JzPtIyiRjNwPYstDk+kHNm5ho="
+        }
+      ]
+    },
+    {
+      "Route": "Mainpage.html",
+      "AssetFile": "C:\\Users\\BBaten\\source\\repos\\RwinaWebsite\\RwinaWebsite\\wwwroot\\Mainpage.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6532"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"W3ZtRY1RttCxdEZI18JzPtIyiRjNwPYstDk+kHNm5ho=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 06 Jan 2025 13:41:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-W3ZtRY1RttCxdEZI18JzPtIyiRjNwPYstDk+kHNm5ho="
+        }
+      ]
+    },
+    {
+      "Route": "Productpage.html",
+      "AssetFile": "C:\\Users\\BBaten\\source\\repos\\RwinaWebsite\\RwinaWebsite\\wwwroot\\Productpage.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5798"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RC4+vj9S5skEIrFPfLH+yykc5N4T5OTCbQoTWDrnkvU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 06 Jan 2025 13:41:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RC4+vj9S5skEIrFPfLH+yykc5N4T5OTCbQoTWDrnkvU="
+        }
+      ]
+    },
+    {
+      "Route": "Productpage.syqn2trnjp.html",
+      "AssetFile": "C:\\Users\\BBaten\\source\\repos\\RwinaWebsite\\RwinaWebsite\\wwwroot\\Productpage.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5798"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RC4+vj9S5skEIrFPfLH+yykc5N4T5OTCbQoTWDrnkvU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 06 Jan 2025 13:41:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "syqn2trnjp"
+        },
+        {
+          "Name": "label",
+          "Value": "Productpage.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RC4+vj9S5skEIrFPfLH+yykc5N4T5OTCbQoTWDrnkvU="
+        }
+      ]
+    }
+  ]
+}

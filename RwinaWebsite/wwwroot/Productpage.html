@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+        
+        .top-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 65px;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+            z-index: 10;
+        }
+            .top-bar h1 {
+                margin: 0;
+                font-size: 2.2em;
+                font-family: 'Courier New', Courier;
+            }
+                .top-bar a {
+                    text-decoration: none;
+                    color: white;
+                }
+
+                .top-bar a:focus,
+                .top-bar a:visited,
+                .top-bar a:active {
+                    color: white;
+                    outline: none;
+                }
+
+        .typing-effect {
+            text-align: center;
+            margin-top: 80px;
+        }
+            .typing-effect h2 {
+                font-size: 2em;
+                font-family: 'Arial', sans-serif;
+                color: #333;
+                display: inline-block;
+            }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .product-page-header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #f4f4f4;
+        }   
+            .product-page-header h2 {
+                font-size: 2.5em;
+            }
+                .product-page-header p {
+                    font-size: 1.5em;
+                    color: #555;
+                }
+
+        .product-listing {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .product-card {
+            background-color: #fff;
+            width: 280px;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+            .product-card img {
+                width: 100%;
+                height: auto;
+                border-radius: 5px;
+            }
+                .product-card h3 {
+                    font-size: 1.5em;
+                    margin: 10px 0;
+                }
+                    .product-card p {
+                        font-size: 1.1em;
+                        color: #777;
+                    }
+                        .product-card span {
+                            font-size: 1.4em;
+                            color: #333;
+                            font-weight: bold;
+                        }
+                            .product-card button {
+                                background-color: #333;
+                                color: white;
+                                padding: 10px 20px;
+                                border: none;
+                                border-radius: 5px;
+                                cursor: pointer;
+                                transition: background-color 0.3s;
+                            }
+                                .product-card button:hover {
+                                    background-color: #555;
+                                }
+                                    .product-card:hover {
+                                        transform: scale(1.05);
+                                    }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="top-bar">
+        <a href="Mainpage.html"><h1 id="rwina-text">Rwina</h1></a>
+    </div>
+
+    <div class="typing-effect">
+        <h2 id="typing-text"></h2>
+    </div>
+
+    <section class="product-page-header">
+        <h2>Our Products</h2>
+        <p>Browse through our collection of products.</p>
+    </section>
+
+    <section class="product-listing">
+        <div class="product-card">
+            <img src="product1.jpg" alt="Product 1" />
+            <h3>Product Name 1</h3>
+            <p>Description of the product.</p>
+            <span>€59,99</span>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="product2.jpg" alt="Product 2" />
+            <h3>Product Name 2</h3>
+            <p>Description of the product.</p>
+            <span>€39,99</span>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="product3.jpg" alt="Product 3" />
+            <h4>Product Name 3</h4>
+            <p>Description of the product.</p>
+            <span>€29,99</span>
+            <button>Add to Cart</button>
+        </div>
+        </section>
+
+    <script>
+
+        var i = 0;
+        var txt = 'Rwina'
+        var speed = 100;
+        var cursor = document.createElement("span");
+        cursor.innerHTML = '|';
+        cursor.style.animation = "blink 0.7s infinite";
+
+        document.getElementById("rwina-text").innerHTML = '';
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("rwina-text").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            } else {
+                document.getElementById("rwina-text").appendChild(cursor);
+            }
+        }
+
+        typeWriter();
+    </script>
+
+</body>
+</html>

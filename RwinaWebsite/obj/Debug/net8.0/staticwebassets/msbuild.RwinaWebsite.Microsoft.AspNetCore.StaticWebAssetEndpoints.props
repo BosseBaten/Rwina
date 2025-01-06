@@ -1,0 +1,28 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/RwinaWebsite/Mainpage.11g28tj8bd.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Mainpage.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"11g28tj8bd"},{"Name":"integrity","Value":"sha256-W3ZtRY1RttCxdEZI18JzPtIyiRjNwPYstDk\u002BkHNm5ho="},{"Name":"label","Value":"_content/RwinaWebsite/Mainpage.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6532"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022W3ZtRY1RttCxdEZI18JzPtIyiRjNwPYstDk\u002BkHNm5ho=\u0022"},{"Name":"Last-Modified","Value":"Mon, 06 Jan 2025 13:41:30 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/RwinaWebsite/Mainpage.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Mainpage.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-W3ZtRY1RttCxdEZI18JzPtIyiRjNwPYstDk\u002BkHNm5ho="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6532"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022W3ZtRY1RttCxdEZI18JzPtIyiRjNwPYstDk\u002BkHNm5ho=\u0022"},{"Name":"Last-Modified","Value":"Mon, 06 Jan 2025 13:41:30 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/RwinaWebsite/Productpage.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Productpage.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-RC4\u002Bvj9S5skEIrFPfLH\u002Byykc5N4T5OTCbQoTWDrnkvU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5798"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022RC4\u002Bvj9S5skEIrFPfLH\u002Byykc5N4T5OTCbQoTWDrnkvU=\u0022"},{"Name":"Last-Modified","Value":"Mon, 06 Jan 2025 13:41:30 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/RwinaWebsite/Productpage.syqn2trnjp.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Productpage.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"syqn2trnjp"},{"Name":"integrity","Value":"sha256-RC4\u002Bvj9S5skEIrFPfLH\u002Byykc5N4T5OTCbQoTWDrnkvU="},{"Name":"label","Value":"_content/RwinaWebsite/Productpage.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5798"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022RC4\u002Bvj9S5skEIrFPfLH\u002Byykc5N4T5OTCbQoTWDrnkvU=\u0022"},{"Name":"Last-Modified","Value":"Mon, 06 Jan 2025 13:41:30 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>
